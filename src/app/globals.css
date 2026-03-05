@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --font-opensans: openSans;
+
+  --textoLocalizacao: #434345;
+
+  --corAzulClaro: #004FFF;
+  --corAzulEscuro: #0348E3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@theme {
+  --color-texto-localizacao: var(--textoLocalizacao);
+  --color-azul-claro: var(--corAzulClaro);
+  --color-azul-escuro: var(--corAzulEscuro);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-opensans), sans-serif;
+}
+
+.fundoHero {
+  position: relative;
+  z-index: 1;
+}
+
+.fundoHero::before {
+  position: absolute;
+  content: "";
+  top: 0; left: 0; width: 100%; height: 100%;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/sofa.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
