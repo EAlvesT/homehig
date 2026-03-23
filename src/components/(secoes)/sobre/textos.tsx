@@ -49,7 +49,7 @@ export function Textos() {
     ]
 
     return (
-        <div className="w-9/10 md:max-w-3/5 py-15 px-4 md:px-17 bg-[#0D1520] text-left flex items-start justify-center flex-col gap-25">
+        <div className="w-9/10 border border-[#0D1520] md:max-w-3/5 h-full py-15 px-4 md:px-17 bg-[#0D1520] text-left flex items-start justify-center flex-col gap-25">
             <div>
                 <h2 className="text-azul-escuro font-serif text-4xl">+{calculaTempoExperiencia()} ANOS</h2>
                 <span className="text-lg">De Experiência</span>

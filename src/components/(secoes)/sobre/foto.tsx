@@ -1,10 +1,10 @@
 import Image from "next/image";
-import fotoSobre from '../../../../public/ipadmockup.png';
+import fotoSobre from '../../../../public/sobremockup.png';
 
 export function FotoSobre() {
     return (
-        <div className="w-full h-full pt-4 flex items-center justify-center" data-aos="fade-left">
-            <div className="w-full md:w-4/5 pt-4 aspect-4/5 relative">
+        <div className="w-full h-full flex items-center justify-center" data-aos="fade-left">
+            <div className="w-full md:w-4/5 aspect-4/5 relative">
                 <Image
                     src={fotoSobre}
                     alt="Imagem da logo"
@@ -20,8 +20,8 @@ export function FotoSobre() {
                     <div className="w-fit px-2 md:px-10 flex items-center justify-center flex-col">
 
                         <div className="w-full flex items-center justify-between text-xl">
-                            <span>JU VIANA</span>
                             <span>ROBSON VILLA</span>
+                            <span>JU VIANA</span>
                         </div>
 
                         <div className="w-full text-lg md:text-xl">

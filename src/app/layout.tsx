@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { AosInit } from "../components/aos-init";
+import { PhoneProvider } from "../context/globals";
 
 const openSans = Open_Sans({
   weight: ['300', '500', '700', '800'],
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   keywords: ['limpeza', 'higienização', 'estofados', 'lavagem à seco', 'seco', 'profissional'],
   creator: 'Eduardo Alves',
   publisher: 'Robson  Villa',
-  metadataBase: new URL('https://localhost.com.br'),
+  metadataBase: new URL('https://homehigvr.com.br'),
   alternates: {
     canonical: '/',
   },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://localhost.com.br',
+    url: 'https://homehigvr.com.br',
     siteName: 'HOME HIGIENIZAÇÃO DE ESTOFADOS',
     title: 'Higienização de estofados',
     description: 'A melhor higienização de estofados da região!',
@@ -77,7 +78,9 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <AosInit />
-        {children}
+        <PhoneProvider>
+          {children}
+        </PhoneProvider>
       </body>
     </html>
   );

@@ -3,22 +3,33 @@
 :root {
   --background: #ffffff;
   --font-opensans: openSans;
-
-  --textoLocalizacao: #434345;
-
-  --corAzulClaro: #004FFF;
-  --corAzulEscuro: #0348E3;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
 }
 
 @theme {
-  --color-texto-localizacao: var(--textoLocalizacao);
-  --color-azul-claro: var(--corAzulClaro);
-  --color-azul-escuro: var(--corAzulEscuro);
+  --color-texto-localizacao: #434345;
+  --color-azul-claro: #004FFF;
+  --color-azul-escuro: #0348E3;
+  --color-padrao: #fff;
+  --color-geral: #151313;
+
+  --color-cards-borders: #4e5156;
+  
+  --color-cards-fundo: #041326;
+
+  /* ----------- SERVIÇOS ----------- */
+  --color-fundo-servicos: #020B17;
+
+  /* ----------- PASSOS ----------- */
+
+  /* ----------- ESCOLHA ----------- */
+  
+  /* ----------- ESCOLHA ----------- */
+  --color-fundo-footer: #000;
+
+  /* ----------- READY ----------- */
+  --color-fundo-escolha: #041326;
+  --color-fundo-inicial-card: #0F287E;
+  --color-fundo-final-card: #03091c;
 }
 
 body {
