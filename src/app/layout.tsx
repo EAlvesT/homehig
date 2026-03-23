@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Home - Cuidado para o seu lar",
   description: "Profissionalismo excepcional para o cuidado dos seus móveis e estofados!",
   authors: [{ name: 'HOME HIGIENIZAÇÃO DE ESTOFADOS' }],
-  keywords: ['limpeza', 'higienização', 'estofados', 'lavagem à seco', 'seco', 'profissional'],
+  keywords: ['limpeza', 'higienização', 'estofados', 'lavagem', 'lavagem à seco', 'seco', 'profissional', 'especializado', 'serviço', 'domicílio', 'estética', 'conservação', 'sofá', 'poltrona', 'cadeira', 'colchão', 'cama', 'box', 'puff', 'cabeceira', 'banqueta', 'tapete', 'carpete', 'cortina', 'almofada', 'linho', 'veludo', 'suede', 'couro', 'veicular', 'automotiva', 'carros', 'bancos', 'teto', 'carpete', 'porta-malas', 'hidratação', 'interno', 'interno', 'painel', 'detalhamento'],
   creator: 'Eduardo Alves',
   publisher: 'Robson  Villa',
   metadataBase: new URL('https://homehigvr.com.br'),
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     description: 'A melhor higienização de estofados da região!',
     images: [
       {
-        url: '/og-image.png', // Caminho na pasta public
-        width: 1200,
-        height: 630,
+        url: '/og-image.jpeg', // Caminho na pasta public
+        width: 688,
+        height: 748,
         alt: 'Imagem para limpeza de estofados',
       },
     ],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: '/fav-icon.ico',
+    icon: '/favicon.ico',
     shortcut: '/shortcut-icon.ico',
     apple: '/apple-touch-icon.ico',
   },
