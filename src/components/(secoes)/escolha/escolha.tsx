@@ -20,7 +20,7 @@ export function EscolhaSection() {
     ];
 
     return (
-        <section className="w-full min-h-screen pt-4 md:pt-10 pb-6 text-padrao bg-black/50 bg-blend-darken bg-[url('/canto-sala.jpg')] bg-cover bg-center">
+        <section className="w-full min-h-screen pt-4 md:pt-10 pb-6 text-padrao bg-black/50 bg-blend-darken bg-[url('/canto-sala.jpg')] bg-cover bg-center overflow-hidden">
             <CenterContent>
                 <div className="w-full md:w-3/4 px-4 mx-auto flex items-center justify-center flex-col gap-4 md:gap-10">
                     <h1 className="text-center font-bold text-[22px] md:text-5xl text-nowrap">PORQUE ESCOLHER A {<LogoEscolha />} ?
