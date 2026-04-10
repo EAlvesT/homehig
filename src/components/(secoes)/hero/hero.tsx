@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { CenterContent } from "../../center-content"
 import { BotaoContato } from "../../contato"
 import { Logo } from "../../logo"
@@ -18,25 +17,4 @@ export function Hero() {
             </CenterContent>
         </section>
     )
-=======
-import { CenterContent } from "../../center-content"
-import { BotaoContato } from "../../contato"
-import { Logo } from "../../logo"
-import { TextosHero } from "./textos"
-
-export function Hero() {
-    return (
-        <section className="w-full py-8 pb-15 bg-geral text-padrao overflow-hidden fundoHero">
-            <CenterContent>
-                <div className="w-full flex items-center justify-center flex-col gap-12">
-                    <Logo />
-
-                    <TextosHero />
-
-                    <BotaoContato icone="telefone" texto="SOLICITAR ORÇAMENTO GRÁTIS" />
-                </div>
-            </CenterContent>
-        </section>
-    )
->>>>>>> 1a3b13d (fix-age-add-readme)
 }
