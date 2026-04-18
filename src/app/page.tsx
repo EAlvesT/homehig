@@ -8,7 +8,7 @@ import { Sobre } from "../components/(secoes)/sobre/sobre";
 import { ApiDataProps } from "../types/types";
 
 export default async function Home() {
-  const api_key = process.env.COSMIC_API_READ_KEY;
+  const api_key = process.env.COSMIC_API_READ_KEY!;
 
   const baseApiUrl = `https://api.cosmicjs.com/v3/buckets/homehig-production-f2404c60-3b3d-11f1-a194-236056411684/objects/69e3a985e8787a5bd2e1c457?read_key=${api_key}&props=slug%2Ctitle%2Cmetadata%2Ctype&depth=1&limit=10&skip=0&sort=-order`;
 
