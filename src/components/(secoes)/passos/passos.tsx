@@ -1,8 +1,15 @@
 import { CenterContent } from "../../center-content"
 import { ContainerCardPassos } from "./containerCardPassos";
 
+export interface PassosProps {
+    id: number;
+    numero: string;
+    titulo: string;
+    texto: string;
+};
+
 export function PassosSection() {
-    const passos = [
+    const passos: PassosProps[] = [
         { id: 1, numero: "01", titulo: "Seu Nome", texto: "Nos diga como você se chama para que possamos te atender melhor." },
         { id: 2, numero: "02", titulo: "Seu Bairro", texto: "Informe seu bairro para verificarmos possibilidade de agenda." },
         { id: 3, numero: "03", titulo: "Foto do estofado", texto: "Envie uma foto do que precisa de tratamento para te passarmos o valor do investimento." },

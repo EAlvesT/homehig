@@ -31,7 +31,8 @@ export function ContactField({ telefones }: ContactFieldProps) {
     return (
         <div className="flex items-center justify-center gap-1">
             <FaPhoneAlt size={18} color="#fff" />
-            <span className="text-lg md:text-xl">{numeroFormatado}</span>
+            {/* <span className="text-lg md:text-xl">{numeroFormatado}</span> */}
+            <a className="text-lg md:text-xl" href={`tel:${numero}`}>{numeroFormatado}</a>
         </div>
     )
 }

@@ -3,8 +3,7 @@
 import { useRef, useEffect } from "react";
 import { CardsDataProps } from "./escolha";
 import { CardEscolha } from "./escolhaCard";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import gsap from "@/libs/gsap";
 
 interface ContainerEscolhaCardsProps {
     cardsData: CardsDataProps[]
@@ -54,4 +53,4 @@ export function ContainerEscolhaCards({ cardsData }: ContainerEscolhaCardsProps)
             ))}
         </div>
     )
-}
+};

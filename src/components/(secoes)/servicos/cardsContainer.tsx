@@ -2,11 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { ServicoCard } from "./servicoCard";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "@/libs/gsap";
 import { ServicosProps } from "@/src/types/types";
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface ServicosContainerProps {
     servicos: ServicosProps[]
@@ -40,15 +37,24 @@ export function ContainerCardsServicos({ servicos }: ServicosContainerProps) {
     }, []);
 
     return (
-        <div
-            className="w-full md:w-122.5 grid grid-cols-2 place-items-center gap-y-8 servico-card"
-            ref={containerRef}
-        >
+        <>
+            {servicos.length >= 1 && (
+                <div
+                    className="w-full md:w-122.5 grid grid-cols-2 place-items-center gap-y-8 servico-card"
+                    ref={containerRef}
+                >
+                    {servicos.map(servico => (
+                        <ServicoCard key={servico.id} imgPath={servico.imgpath.url} label={servico.label} />
+                    ))}
 
-            {servicos.map(servico => (
-                <ServicoCard key={servico.id} imgPath={servico.imgpath.url} label={servico.label} />
-            ))}
+                </div>
+            )}
 
-        </div>
+            {servicos.length === 0 && (
+                <div className="w-full flex items-center justify-center">
+                    <p className="text-lg">Nenhum serviço para exibir 😟</p>
+                </div>
+            )}
+        </>
     )
-}
+};

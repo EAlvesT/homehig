@@ -10,7 +10,7 @@ import { ApiDataProps } from "../types/types";
 export default async function Home() {
   const api_key = process.env.COSMIC_API_READ_KEY;
 
-  const baseApiUrl = `https://api.cosmicjs.com/v3/buckets/homehig-production/objects/69c163e6ec4fb6783710662b?pretty=true&read_key=${api_key}=1&props=slug,title,metadata,type`;
+  const baseApiUrl = `https://api.cosmicjs.com/v3/buckets/homehig-production-f2404c60-3b3d-11f1-a194-236056411684/objects/69e3a985e8787a5bd2e1c457?read_key=${api_key}&props=slug%2Ctitle%2Cmetadata%2Ctype&depth=1&limit=10&skip=0&sort=-order`;
 
   async function getDados(): Promise<ApiDataProps> {
     const dados = await fetch(baseApiUrl, { next: { revalidate: 300 } })
@@ -21,6 +21,7 @@ export default async function Home() {
   }
 
   const { object } = await getDados();
+
   const { metadata: { services: servicos } } = object;
   const { metadata: { telefone } } = object;
   const telefones = telefone.split("|");

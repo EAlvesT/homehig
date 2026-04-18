@@ -1,20 +1,13 @@
 "use client"
 
 import { useRef, useEffect } from "react";
-import gsap from "gsap";
+import gsap from "@/libs/gsap";
 import { CardPassos } from "./card-passos";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-interface PassosProps {
-    id: number;
-    numero: string;
-    titulo: string;
-    texto: string;
-}
+import { PassosProps } from "./passos";
 
 interface ConatinerCardPassosProps {
     passos: PassosProps[]
-}
+};
 
 export function ContainerCardPassos({ passos }: ConatinerCardPassosProps) {
     const containerRef = useRef<HTMLDivElement | null>(null);
@@ -55,4 +48,4 @@ export function ContainerCardPassos({ passos }: ConatinerCardPassosProps) {
             ))}
         </div>
     )
-}
+};

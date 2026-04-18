@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import { AosInit } from "../components/aos-init";
+import { AosInit } from "../../libs/aos-init";
 import { PhoneProvider } from "../context/globals";
 
 const openSans = Open_Sans({
